@@ -110,7 +110,7 @@ sync/async message thresholds and different backends.
 To use multiple sinks (beyond the built-in sink of lager and lager_event), you
 need to:
 
-1. Setup rebar.config
+1. Setup epm.rel
 2. Configure the backends in app.config
 
 #### Names
@@ -125,9 +125,9 @@ This reflects the legacy behavior: `lager:info` (or `critical`, or
 `myCompanyName:debug` so long as the corresponding `audit_lager_event` or
 `myCompanyName_lager_event` sinks are configured.
 
-#### rebar.config
+#### epm.rel
 
-In `rebar.config` for the project that requires lager, include a list
+In `epm.rel` for the project that requires lager, include a list
 of sink names (without the `_lager_event` suffix) in `erl_opts`:
 
 `{lager_extra_sinks, [audit]}`
