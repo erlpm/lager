@@ -33,12 +33,16 @@ Usage
 To use lager in your application, you need to define it as a rebar dep or have
 some other way of including it in Erlang's path. You can then add the
 following option to the erlang compiler flags:
+要在您的应用程序中使用lager，您需要将其定义为钢筋dep或have
+在Erlang的路径中包含它的其他方法。然后您可以添加
+Erlang编译器标志的以下选项:
 
 ```erlang
 {parse_transform, lager_transform}
 ```
 
 Alternately, you can add it to the module you wish to compile with logging
+另外，也可以将其添加到希望使用日志记录编译的模块中
 enabled:
 
 ```erlang

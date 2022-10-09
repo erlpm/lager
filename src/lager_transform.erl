@@ -298,8 +298,8 @@ find_app_file(Dir) ->
             no_idea;
         [File] ->
             case file:consult(File) of
-                {ok, [{application, Appname, _Attributes}|_]} ->
-                    erlang:put(application, Appname);
+                {ok, [{application, AppName, _Attributes}|_]} ->
+                    erlang:put(application, AppName);
                 _ ->
                     no_idea
             end;

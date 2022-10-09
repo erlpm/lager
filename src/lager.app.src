@@ -27,7 +27,6 @@
               {critical,  "\e[1;35m" },
               {alert,     "\e[1;44m" },
               {emergency, "\e[1;41m" }
-
             ]},
 
             %% Whether to write a crash log, and where. False means no crash logger.
